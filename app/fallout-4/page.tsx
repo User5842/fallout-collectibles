@@ -1,8 +1,8 @@
-export default function Fallout4() {
+export default function Fallout4Collectibles() {
   return (
     <div>
       <section>
-        <header>
+        <header className="space-y-4">
           <h2 className="font-semibold text-lg">Bobbleheads</h2>
           <p className="text-sm">
             Vault-Tec bobbleheads are found on the eastern side of the former

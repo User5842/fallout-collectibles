@@ -17,9 +17,11 @@ export default function RootLayout({
     <html lang="en">
       <body className="antialiased">
         <main className="container mx-auto p-4">
-          <div className="flex flex-col justify-between items-center sm:flex-row">
+          <div className="flex flex-col justify-between items-center sm:flex-row space-y-4">
             <header className="text-center">
-              <h1 className="font-bold text-2xl">Fallout Collectibles</h1>
+              <Link href="/fallout-3">
+                <h1 className="font-bold text-2xl">Fallout Collectibles</h1>
+              </Link>
             </header>
             <nav>
               <ul className="flex gap-8">
