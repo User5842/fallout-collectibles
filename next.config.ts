@@ -1,7 +1,15 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  async redirects() {
+    return [
+      {
+        destination: "/fallout-3",
+        permanent: true,
+        source: "/",
+      },
+    ];
+  },
 };
 
 export default nextConfig;
