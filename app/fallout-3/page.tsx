@@ -30,7 +30,7 @@ export default function Fallout3Collectibles() {
                   />
                 </div>
               </Link>
-            ))
+            )),
           )}
         </div>
       </section>
