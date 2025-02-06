@@ -1,5 +1,6 @@
 import { Quote } from "lucide-react";
 import { fallout3Collectibles } from "../collectibles";
+import Image from "next/image";
 
 export default async function Fallout3Collectible({
   params,
@@ -7,9 +8,9 @@ export default async function Fallout3Collectible({
   params: Promise<{ id: number }>;
 }) {
   const fallout3CollectibleId = (await params).id;
-  const fallout3Collectible = fallout3Collectibles
+  const fallout3Collectible = Object.values(fallout3Collectibles)
     .flat()
-    .find((collectible) => collectible.id == fallout3CollectibleId);
+    .find(({ id }) => id == fallout3CollectibleId);
 
   return (
     <div>
@@ -22,7 +23,17 @@ export default async function Fallout3Collectible({
             {fallout3Collectible?.quote}
           </p>
         </header>
-        <div className="mt-4"></div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-4">
+          {fallout3Collectible?.images.map((image, index) => (
+            <div className="aspect-square" key={index}>
+              <Image
+                alt={`Contextual image for the ${fallout3Collectible.name} bobblehead`}
+                className="h-full w-full object-contain"
+                src={image}
+              />
+            </div>
+          ))}
+        </div>
       </section>
     </div>
   );

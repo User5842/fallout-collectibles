@@ -1,4 +1,8 @@
-import agilityBobblehead from "./collectibles/bobbleheads/Bobblehead_Agility.webp";
+import agilityBobblehead from "./collectibles/bobbleheads/agility/Bobblehead_Agility.webp";
+import greenerPasturesDisposalSiteMap from "./collectibles/bobbleheads/agility/GP_Disposal_Site_loc.webp";
+import greenerPasturesDisposalSiteBobblehead from "./collectibles/bobbleheads/agility/Greener_Pastures_Disposal_site_Bobblehead_Agility.webp";
+import greenerPasturesDisposalSiteLocation from "./collectibles/bobbleheads/agility/GreenerPasturesDisposalSite.webp";
+
 import barterBobblehead from "./collectibles/bobbleheads/Bobblehead_Barter.webp";
 import bigGunsBobblehead from "./collectibles/bobbleheads/Bobblehead_Big_Guns.webp";
 import charismaBobblehead from "./collectibles/bobbleheads/Bobblehead_Charisma.webp";
@@ -19,13 +23,20 @@ import speechBobblehead from "./collectibles/bobbleheads/Bobblehead_Speech.webp"
 import strengthBobblehead from "./collectibles/bobbleheads/Bobblehead_Strength.webp";
 import unarmedBobblehead from "./collectibles/bobbleheads/Bobblehead_Unarmed.webp";
 
-const fallout3Collectibles = [
-  [
+const fallout3Collectibles = {
+  bobbleheads: [
     {
       id: 1,
       description:
         "Bobblehead - Agility is a miscellaneous item in Fallout 3. It permanently improves the Lone Wanderer's Agility by 1, up to a maximum of 10.",
-      image: agilityBobblehead,
+      images: [
+        agilityBobblehead,
+        greenerPasturesDisposalSiteBobblehead,
+        greenerPasturesDisposalSiteLocation,
+        greenerPasturesDisposalSiteMap,
+      ],
+      location:
+        "It is found in the Greener Pastures disposal site's main office on a desk, next to a safe terminal.",
       name: "Agility Bobblehead",
       quote: "Never be afraid to dodge the sensitive issues.",
     },
@@ -33,7 +44,7 @@ const fallout3Collectibles = [
       id: 2,
       description:
         "Bobblehead - Barter is a miscellaneous item in Fallout 3. It permanently improves the Lone Wanderer's Barter skill by 10, up to a maximum of 100.",
-      image: barterBobblehead,
+      images: [barterBobblehead],
       name: "Barter Bobblehead",
       quote: "Never forget to walk away with more than you've brought.",
     },
@@ -41,7 +52,7 @@ const fallout3Collectibles = [
       id: 3,
       description:
         "Bobblehead - Big Guns is a miscellaneous item in Fallout 3. It permanently improves the Lone Wanderer's Big Guns skill by 10, up to a maximum of 100.",
-      image: bigGunsBobblehead,
+      images: [bigGunsBobblehead],
       name: "Big Guns Bobblehead",
       quote: "The best way to win an argument is to be the loudest.",
     },
@@ -49,7 +60,7 @@ const fallout3Collectibles = [
       id: 4,
       description:
         "Bobblehead - Charisma is a miscellaneous item in Fallout 3. It permanently improves the Lone Wanderer's Charisma by 1, up to a maximum of 10.",
-      image: charismaBobblehead,
+      images: [charismaBobblehead],
       name: "Charisma Bobblehead",
       quote: "Nothing says pizzaz like a winning smile.",
     },
@@ -57,7 +68,7 @@ const fallout3Collectibles = [
       id: 5,
       description:
         "Bobblehead - Endurance is a miscellaneous item in Fallout 3. It permanently improves the Lone Wanderer's Endurance by 1, up to a maximum of 10.",
-      image: enduranceBobblehead,
+      images: [enduranceBobblehead],
       name: "Endurance Bobblehead",
       quote: "Always be ready to take one for the team.",
     },
@@ -65,7 +76,7 @@ const fallout3Collectibles = [
       id: 6,
       description:
         "Bobblehead - Energy Weapons is a miscellaneous item in Fallout 3. It permanently improves the Lone Wanderer's Energy Weapons skill by 10, up to a maximum of 100.",
-      image: energyWeaponsBobblehead,
+      images: [energyWeaponsBobblehead],
       name: "Energy Weapons Bobblehead",
       quote: "Arrive at peaceful resolutions by using superior firepower.",
     },
@@ -73,7 +84,7 @@ const fallout3Collectibles = [
       id: 7,
       description:
         "Bobblehead - Explosives is a miscellaneous item in Fallout 3. It permanently improves the Lone Wanderer's Explosives skill by 10, up to a maximum of 100.",
-      image: explosivesBobblehead,
+      images: [explosivesBobblehead],
       name: "Explosives Bobblehead",
       quote: "The best way to solve a problem is to make it go away.",
     },
@@ -81,7 +92,7 @@ const fallout3Collectibles = [
       id: 8,
       description:
         "Bobblehead - Intelligence is a miscellaneous item in Fallout 3. It permanently improves the Lone Wanderer's Intelligence by 1, up to a maximum of 10.",
-      image: intelligenceBobblehead,
+      images: [intelligenceBobblehead],
       name: "Intelligence Bobblehead",
       quote:
         "It takes the smartest individuals to realize there's always more to learn.",
@@ -90,7 +101,7 @@ const fallout3Collectibles = [
       id: 9,
       description:
         "Bobblehead - Lockpick is a miscellaneous item in Fallout 3. It permanently improves the Lone Wanderer's Lockpick skill by 10, up to a maximum of 100.",
-      image: lockpickBobblehead,
+      images: [lockpickBobblehead],
       name: "Lockpick Bobblehead",
       quote: "Always strive for the unobtainable.",
     },
@@ -98,7 +109,7 @@ const fallout3Collectibles = [
       id: 10,
       description:
         "Bobblehead - Luck is a miscellaneous item in Fallout 3. It permanently improves the Lone Wanderer's Luck by 1, up to a maximum of 10.",
-      image: luckBobblehead,
+      images: [luckBobblehead],
       name: "Luck Bobblehead",
       quote: "There's only one way to give 110%.",
     },
@@ -106,7 +117,7 @@ const fallout3Collectibles = [
       id: 11,
       description:
         "The Bobblehead - Medicine is a miscellaneous item in Fallout 3. It permanently improves the Lone Wanderer's Medicine skill by 10, up to a maximum of 100.",
-      image: medicineBobblehead,
+      images: [medicineBobblehead],
       name: "Medicine Bobblehead",
       quote: "The smart man knows a bandage only hides his wounds.",
     },
@@ -114,7 +125,7 @@ const fallout3Collectibles = [
       id: 12,
       description:
         "Bobblehead - Melee Weapons is a miscellaneous item in Fallout 3. It permanently improves the Lone Wanderer's Melee Weapons skill by 10, up to a maximum of 100.",
-      image: meleeWeaponsBobblehead,
+      images: [meleeWeaponsBobblehead],
       name: "Melee Weapons Bobblehead",
       quote: "It's important to do business up close and personal.",
     },
@@ -122,7 +133,7 @@ const fallout3Collectibles = [
       id: 13,
       description:
         "Bobblehead - Perception is a miscellaneous item in Fallout 3. It permanently improves the Lone Wanderer's Perception by 1, up to a maximum of 10.",
-      image: perceptionBobblehead,
+      images: [perceptionBobblehead],
       name: "Perception Bobblehead",
       quote: "Only through observation will you perceive weakness.",
     },
@@ -130,7 +141,7 @@ const fallout3Collectibles = [
       id: 14,
       description:
         "Bobblehead - Repair is a miscellaneous item in Fallout 3. It permanently improves the Lone Wanderer's Repair skill by 10, up to a maximum of 100.",
-      image: repairBobblehead,
+      images: [repairBobblehead],
       name: "Repair Bobblehead",
       quote: "Why go down with the ship when you can try to fix it?",
     },
@@ -138,7 +149,7 @@ const fallout3Collectibles = [
       id: 15,
       description:
         "Bobblehead - Science is a miscellaneous item in Fallout 3. It permanently improves the Lone Wanderer's Science skill by 10, up to a maximum of 100.",
-      image: scienceBobblehead,
+      images: [scienceBobblehead],
       name: "Science Bobblehead",
       quote: "Always be prepared to explain the hows and whys.",
     },
@@ -146,7 +157,7 @@ const fallout3Collectibles = [
       id: 16,
       description:
         "Bobblehead - Small Guns is a miscellaneous item in Fallout 3. It permanently improves the Lone Wanderer's Small Guns skill by 10, up to a maximum of 100.",
-      image: smallGunsBobblehead,
+      images: [smallGunsBobblehead],
       name: "Small Guns Bobblehead",
       quote: "Because it's easier to have courage from a safe distance away.",
     },
@@ -154,7 +165,7 @@ const fallout3Collectibles = [
       id: 17,
       description:
         "Bobblehead - Sneak is a miscellaneous item in Fallout 3. It permanently improves the Lone Wanderer's Sneak skill by 10, up to a maximum of 100.",
-      image: sneakBobblehead,
+      images: [sneakBobblehead],
       name: "Sneak Bobblehead",
       quote: "The safest distance between two points is a shadowy line.",
     },
@@ -162,7 +173,7 @@ const fallout3Collectibles = [
       id: 18,
       description:
         "Bobblehead - Speech is a miscellaneous item in Fallout 3. It permanently improves the Lone Wanderer's Speech skill by 10, up to a maximum of 100.",
-      image: speechBobblehead,
+      images: [speechBobblehead],
       name: "Speech Bobblehead",
       quote: "Let words be your weapon.",
     },
@@ -170,7 +181,7 @@ const fallout3Collectibles = [
       id: 19,
       description:
         "Bobblehead - Strength is a miscellaneous item in Fallout 3. It permanently improves the Lone Wanderer's Strength by 1, up to a maximum of 10.",
-      image: strengthBobblehead,
+      images: [strengthBobblehead],
       name: "Strength Bobblehead",
       quote: "It's essential to give your arguments impact.",
     },
@@ -178,11 +189,11 @@ const fallout3Collectibles = [
       id: 20,
       description:
         "Bobblehead - Unarmed is a miscellaneous item in Fallout 3. It permanently improves the Lone Wanderer's Unarmed skill by 10, up to a maximum of 100.",
-      image: unarmedBobblehead,
+      images: [unarmedBobblehead],
       name: "Unarmed Bobblehead",
       quote: "When words fail, there's always fists.",
     },
   ],
-];
+};
 
 export { fallout3Collectibles };
