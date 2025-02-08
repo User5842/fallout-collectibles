@@ -3,7 +3,7 @@ export default function Fallout4Collectibles() {
     <div>
       <section>
         <header className="space-y-4">
-          <h2 className="font-semibold">Bobbleheads</h2>
+          <h2>Bobbleheads</h2>
           <p>
             Vault-Tec bobbleheads are found on the eastern side of the former
             United States, throughout the Commonwealth. Bobbleheads were

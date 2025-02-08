@@ -7,9 +7,7 @@ export default function Fallout3Collectibles() {
     <div>
       <section>
         <header className="space-y-4">
-          <h2 className="font-semibold">
-            Bobbleheads (0 / {fallout3Collectibles.bobbleheads.length})
-          </h2>
+          <h2>Bobbleheads (0 / {fallout3Collectibles.bobbleheads.length})</h2>
           <p>
             Vault-Tec bobbleheads are found on the eastern side of the former
             United States, throughout the Capital Wasteland. Bobbleheads were

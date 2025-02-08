@@ -16,7 +16,7 @@ export default async function Fallout3Collectible({
     <div>
       <section>
         <header className="space-y-4">
-          <h2 className="font-semibold">{fallout3Collectible?.name}</h2>
+          <h2>{fallout3Collectible?.name}</h2>
           <p>{fallout3Collectible?.description}</p>
           <p className="italic  p-2 flex gap-4 items-center">
             <Quote />

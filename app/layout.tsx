@@ -27,7 +27,7 @@ export default function RootLayout({
           <div className="flex flex-col justify-between items-center lg:flex-row space-y-4 sm:space-y-0">
             <header className="text-center">
               <Link href="/fallout-3">
-                <h1 className="font-bold text-4xl">Fallout Collectibles</h1>
+                <h1 className="text-4xl">Fallout Collectibles</h1>
               </Link>
             </header>
             <nav className="m-0">
