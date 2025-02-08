@@ -1,6 +1,13 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { VT323 } from "next/font/google";
 import Link from "next/link";
+
+const vt323 = VT323({
+  display: "swap",
+  subsets: ["latin"],
+  weight: "400",
+});
 
 export const metadata: Metadata = {
   title: "Fallout Collectibles",
@@ -14,24 +21,24 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={vt323.className}>
       <body className="antialiased min-h-screen flex flex-col">
         <main className="container mx-auto p-4 flex-1">
-          <div className="flex flex-col justify-between items-center sm:flex-row space-y-4">
+          <div className="flex flex-col justify-between items-center lg:flex-row space-y-4 sm:space-y-0">
             <header className="text-center">
               <Link href="/fallout-3">
-                <h1 className="font-bold text-2xl">Fallout Collectibles</h1>
+                <h1 className="font-bold text-4xl">Fallout Collectibles</h1>
               </Link>
             </header>
-            <nav>
+            <nav className="m-0">
               <ul className="flex gap-8">
-                <li>
+                <li className="text-center">
                   <Link href="/fallout-3">Fallout 3</Link>
                 </li>
-                <li>
+                <li className="text-center">
                   <Link href="/fallout-new-vegas">Fallout: New Vegas</Link>
                 </li>
-                <li>
+                <li className="text-center">
                   <Link href="/fallout-4">Fallout 4</Link>
                 </li>
               </ul>
@@ -40,8 +47,8 @@ export default function RootLayout({
           <hr className="my-4 " />
           {children}
         </main>
-        <footer className="bg-slate-100">
-          <p className="text-black p-2 text-center">
+        <footer>
+          <p className="text-[#ffd52c] p-2 text-center">
             Content courtesy of{" "}
             <a
               className="text-blue-500"
