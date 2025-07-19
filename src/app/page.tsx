@@ -1,40 +1,57 @@
 import Image from "next/image";
-
-import { Button } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
-
 import Fallout3CoverArt from "../../public/images/cover-art/fallout-3.webp";
 import FalloutNewVegasCoverArt from "../../public/images/cover-art/fallout-new-vegas.webp";
 import Fallout4CoverArt from "../../public/images/cover-art/fallout-4.webp";
+import Link from "next/link";
 
 export default function GameSelection() {
   return (
-    <main className="container mx-auto p-4">
-      <header className="flex items-center justify-between">
-        <div>
-          <h1>Fallout Collectibles</h1>
-          <p>Track every collectible you find across the Fallout universe</p>
-        </div>
-        <Button variant="outline">Log In</Button>
-      </header>
-      <Separator className="my-4" />
-      <section className="flex flex-wrap gap-4">
-        <Image
-          alt="Fallout 3 cover art"
-          className="flex-1 min-w-[100px] object-contain h-96"
-          src={Fallout3CoverArt}
-        />
-        <Image
-          alt="Fallout: New Vegas cover art"
-          className="flex-1 min-w-[100px] object-contain h-96"
-          src={FalloutNewVegasCoverArt}
-        />
-        <Image
-          alt="Fallout 4 cover art"
-          className="flex-1 min-w-[100px] object-contain h-96"
-          src={Fallout4CoverArt}
-        />
-      </section>
-    </main>
+    <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <Link href="/fallout-3">
+        <figure className="flex flex-col items-center text-center">
+          <div className="relative w-full flex-1 aspect-[3/4] rounded-lg overflow-hidden shadow-md">
+            <Image
+              alt="Fallout 3 cover art"
+              className="object-cover"
+              fill
+              src={Fallout3CoverArt}
+            />
+          </div>
+          <figcaption className="mt-3 font-semibold text-lg">
+            Fallout 3
+          </figcaption>
+        </figure>
+      </Link>
+      <Link href="/fallout-new-vegas">
+        <figure className="flex flex-col items-center text-center">
+          <div className="relative w-full flex-1 aspect-[3/4] rounded-lg overflow-hidden shadow-md">
+            <Image
+              alt="Fallout: New Vegas cover art"
+              className="object-cover"
+              fill
+              src={FalloutNewVegasCoverArt}
+            />
+          </div>
+          <figcaption className="mt-3 font-semibold text-lg">
+            Fallout: New Vegas
+          </figcaption>
+        </figure>
+      </Link>
+      <Link href="/fallout-4">
+        <figure className="flex flex-col items-center text-center">
+          <div className="relative w-full flex-1 aspect-[3/4] rounded-lg overflow-hidden shadow-md">
+            <Image
+              alt="Fallout 4 cover art"
+              className="object-cover"
+              fill
+              src={Fallout4CoverArt}
+            />
+          </div>
+          <figcaption className="mt-3 font-semibold text-lg">
+            Fallout 4
+          </figcaption>
+        </figure>
+      </Link>
+    </section>
   );
 }
