@@ -18,7 +18,7 @@ const collectibles = [
     description: "Increases Strength by 1 point permanently.",
     location: "Found in the Museum of Technology in the DC ruins.",
     image:
-      "/images/collectibles/fallout-3/bobbleheads/Bobblehead_Strength.webp",
+      "https://yjpphv5stqjhntza.public.blob.vercel-storage.com/collectibles/fallout-3/bobbleheads/Bobblehead_Strength.webp",
     found: false,
   },
   {
@@ -26,7 +26,7 @@ const collectibles = [
     description: "Increases Perception by 1 point permanently.",
     location: "Located in Arlington Cemetery.",
     image:
-      "/images/collectibles/fallout-3/bobbleheads/Bobblehead_Perception.webp",
+      "https://yjpphv5stqjhntza.public.blob.vercel-storage.com/collectibles/fallout-3/bobbleheads/Bobblehead_Perception.webp",
     found: false,
   },
   {
@@ -34,7 +34,7 @@ const collectibles = [
     description: "Increases Endurance by 1 point permanently.",
     location: "Found in the Sutton Brother's Garage.",
     image:
-      "/images/collectibles/fallout-3/bobbleheads/Bobblehead_Endurance.webp",
+      "https://yjpphv5stqjhntza.public.blob.vercel-storage.com/collectibles/fallout-3/bobbleheads/Bobblehead_Endurance.webp",
     found: false,
   },
   {
@@ -42,7 +42,7 @@ const collectibles = [
     description: "Increases Charisma by 1 point permanently.",
     location: "Located in the Corvega Assembly Plant.",
     image:
-      "/images/collectibles/fallout-3/bobbleheads/Bobblehead_Charisma.webp",
+      "https://yjpphv5stqjhntza.public.blob.vercel-storage.com/collectibles/fallout-3/bobbleheads/Bobblehead_Charisma.webp",
     found: false,
   },
   {
@@ -50,21 +50,23 @@ const collectibles = [
     description: "Increases Intelligence by 1 point permanently.",
     location: "Found in Rivet City Library.",
     image:
-      "/images/collectibles/fallout-3/bobbleheads/Bobblehead_Intelligence.webp",
+      "https://yjpphv5stqjhntza.public.blob.vercel-storage.com/collectibles/fallout-3/bobbleheads/Bobblehead_Intelligence.webp",
     found: false,
   },
   {
     name: "Agility Bobblehead",
     description: "Increases Agility by 1 point permanently.",
     location: "Located in the Thieves Den in Upper Seneca.",
-    image: "/images/collectibles/fallout-3/bobbleheads/Bobblehead_Agility.webp",
+    image:
+      "https://yjpphv5stqjhntza.public.blob.vercel-storage.com/collectibles/fallout-3/bobbleheads/Bobblehead_Agility.webp",
     found: false,
   },
   {
     name: "Luck Bobblehead",
     description: "Increases Luck by 1 point permanently.",
     location: "Found in Paradise Falls.",
-    image: "/images/collectibles/fallout-3/bobbleheads/Bobblehead_Luck.webp",
+    image:
+      "https://yjpphv5stqjhntza.public.blob.vercel-storage.com/collectibles/fallout-3/bobbleheads/Bobblehead_Luck.webp",
     found: false,
   },
   {
@@ -72,7 +74,7 @@ const collectibles = [
     description: "Increases Small Guns skill by 10 points.",
     location: "Found in the Museum of Technology.",
     image:
-      "/images/collectibles/fallout-3/bobbleheads/Bobblehead_Small_Guns.webp",
+      "https://yjpphv5stqjhntza.public.blob.vercel-storage.com/collectibles/fallout-3/bobbleheads/Bobblehead_Small_Guns.webp",
     found: false,
   },
   {
@@ -80,7 +82,7 @@ const collectibles = [
     description: "Increases Big Guns skill by 10 points.",
     location: "Located in Lincoln Memorial.",
     image:
-      "/images/collectibles/fallout-3/bobbleheads/Bobblehead_Big_Guns.webp",
+      "https://yjpphv5stqjhntza.public.blob.vercel-storage.com/collectibles/fallout-3/bobbleheads/Bobblehead_Big_Guns.webp",
     found: false,
   },
   {
@@ -88,7 +90,7 @@ const collectibles = [
     description: "Increases Energy Weapons skill by 10 points.",
     location: "Found in the Repconn Headquarters.",
     image:
-      "/images/collectibles/fallout-3/bobbleheads/Bobblehead_Energy_Weapons.webp",
+      "https://yjpphv5stqjhntza.public.blob.vercel-storage.com/collectibles/fallout-3/bobbleheads/Bobblehead_Energy_Weapons.webp",
     found: false,
   },
   {
@@ -96,7 +98,7 @@ const collectibles = [
     description: "Increases Explosives skill by 10 points.",
     location: "Located in the Nuka-Cola Plant.",
     image:
-      "/images/collectibles/fallout-3/bobbleheads/Bobblehead_Explosives.webp",
+      "https://yjpphv5stqjhntza.public.blob.vercel-storage.com/collectibles/fallout-3/bobbleheads/Bobblehead_Explosives.webp",
     found: false,
   },
   {
@@ -104,7 +106,7 @@ const collectibles = [
     description: "Increases Lockpick skill by 10 points.",
     location: "Found in Vault 106.",
     image:
-      "/images/collectibles/fallout-3/bobbleheads/Bobblehead_Lockpick.webp",
+      "https://yjpphv5stqjhntza.public.blob.vercel-storage.com/collectibles/fallout-3/bobbleheads/Bobblehead_Lockpick.webp",
     found: false,
   },
   {
@@ -112,7 +114,7 @@ const collectibles = [
     description: "Increases Medicine skill by 10 points.",
     location: "Located in the Jefferson Memorial.",
     image:
-      "/images/collectibles/fallout-3/bobbleheads/Bobblehead_Medicine.webp",
+      "https://yjpphv5stqjhntza.public.blob.vercel-storage.com/collectibles/fallout-3/bobbleheads/Bobblehead_Medicine.webp",
     found: false,
   },
   {
@@ -120,49 +122,55 @@ const collectibles = [
     description: "Increases Melee Weapons skill by 10 points.",
     location: "Found in the Congressional Office Building.",
     image:
-      "/images/collectibles/fallout-3/bobbleheads/Bobblehead_Melee_Weapons.webp",
+      "https://yjpphv5stqjhntza.public.blob.vercel-storage.com/collectibles/fallout-3/bobbleheads/Bobblehead_Melee_Weapons.webp",
     found: false,
   },
   {
     name: "Repair Bobblehead",
     description: "Increases Repair skill by 10 points.",
     location: "Located in the Dunwich Building.",
-    image: "/images/collectibles/fallout-3/bobbleheads/Bobblehead_Repair.webp",
+    image:
+      "https://yjpphv5stqjhntza.public.blob.vercel-storage.com/collectibles/fallout-3/bobbleheads/Bobblehead_Repair.webp",
     found: false,
   },
   {
     name: "Science Bobblehead",
     description: "Increases Science skill by 10 points.",
     location: "Found in the Poseidon Energy Plant.",
-    image: "/images/collectibles/fallout-3/bobbleheads/Bobblehead_Science.webp",
+    image:
+      "https://yjpphv5stqjhntza.public.blob.vercel-storage.com/collectibles/fallout-3/bobbleheads/Bobblehead_Science.webp",
     found: false,
   },
   {
     name: "Speech Bobblehead",
     description: "Increases Speech skill by 10 points.",
     location: "Located in the Smithsonian.",
-    image: "/images/collectibles/fallout-3/bobbleheads/Bobblehead_Speech.webp",
+    image:
+      "https://yjpphv5stqjhntza.public.blob.vercel-storage.com/collectibles/fallout-3/bobbleheads/Bobblehead_Speech.webp",
     found: false,
   },
   {
     name: "Barter Bobblehead",
     description: "Increases Barter skill by 10 points.",
     location: "Found in the Lucky 38 Casino.",
-    image: "/images/collectibles/fallout-3/bobbleheads/Bobblehead_Barter.webp",
+    image:
+      "https://yjpphv5stqjhntza.public.blob.vercel-storage.com/collectibles/fallout-3/bobbleheads/Bobblehead_Barter.webp",
     found: false,
   },
   {
     name: "Unarmed Bobblehead",
     description: "Increases Unarmed skill by 10 points.",
     location: "Located in the Crimson Caravan Company.",
-    image: "/images/collectibles/fallout-3/bobbleheads/Bobblehead_Unarmed.webp",
+    image:
+      "https://yjpphv5stqjhntza.public.blob.vercel-storage.com/collectibles/fallout-3/bobbleheads/Bobblehead_Unarmed.webp",
     found: false,
   },
   {
     name: "Sneak Bobblehead",
     description: "Increases Sneak skill by 10 points.",
     location: "Located in the Crimson Caravan Company.",
-    image: "/images/collectibles/fallout-3/bobbleheads/Bobblehead_Sneak.webp",
+    image:
+      "https://yjpphv5stqjhntza.public.blob.vercel-storage.com/collectibles/fallout-3/bobbleheads/Bobblehead_Sneak.webp",
     found: false,
   },
 ];
