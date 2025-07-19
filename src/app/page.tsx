@@ -1,7 +1,4 @@
 import Image from "next/image";
-import Fallout3CoverArt from "../../public/images/cover-art/fallout-3.webp";
-import FalloutNewVegasCoverArt from "../../public/images/cover-art/fallout-new-vegas.webp";
-import Fallout4CoverArt from "../../public/images/cover-art/fallout-4.webp";
 import Link from "next/link";
 
 export default function GameSelection() {
@@ -14,7 +11,7 @@ export default function GameSelection() {
               alt="Fallout 3 cover art"
               className="object-cover"
               fill
-              src={Fallout3CoverArt}
+              src="https://yjpphv5stqjhntza.public.blob.vercel-storage.com/cover-art/fallout-3.webp"
             />
           </div>
           <figcaption className="mt-3 font-semibold text-lg">
@@ -29,7 +26,7 @@ export default function GameSelection() {
               alt="Fallout: New Vegas cover art"
               className="object-cover"
               fill
-              src={FalloutNewVegasCoverArt}
+              src="https://yjpphv5stqjhntza.public.blob.vercel-storage.com/cover-art/fallout-new-vegas.webp"
             />
           </div>
           <figcaption className="mt-3 font-semibold text-lg">
@@ -44,7 +41,7 @@ export default function GameSelection() {
               alt="Fallout 4 cover art"
               className="object-cover"
               fill
-              src={Fallout4CoverArt}
+              src="https://yjpphv5stqjhntza.public.blob.vercel-storage.com/cover-art/fallout-4.webp"
             />
           </div>
           <figcaption className="mt-3 font-semibold text-lg">

@@ -4,6 +4,7 @@ import "./globals.css";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import Link from "next/link";
+import { signIn } from "../../auth";
 
 export const metadata: Metadata = {
   description: "Track every collectible you find across the Fallout universe",
@@ -30,7 +31,14 @@ export default function RootLayout({
                 </p>
               </div>
             </Link>
-            <Button variant="outline">Log In</Button>
+            <form
+              action={async () => {
+                "use server";
+                await signIn("google");
+              }}
+            >
+              <Button variant="outline">Signin with Google</Button>
+            </form>
           </header>
           <Separator className="my-4" />
           {children}
